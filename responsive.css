@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+/*  nav style */
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar h1{
+    color: #ebebeb;
+}
+
+
+
+/* header style */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("nature\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end ;
+}
+ 
+.header-content{
+    margin-bottom: 150px;
+    color: #a6a9c2;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.line {
+    width: 150px;
+    height: 5px;
+    background-color: yellow;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.ctn{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: lightgray;
+    border-radius: 20px;
+    font-size: 2vmin ;
+    text-align: center;
+}
+.menu-button{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Events Section Style */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    font-size: 3vmin;
+    text-align: center;
+    color: #343d52;
+}
+
+.image-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-content img{
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;;
+    gap: 5px;
+    padding: 30px;
+}
+.image-content p{
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+.image-content h4{
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 2vmin;
+}
+
+/* Explore Section Style */
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('compass.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.explore-content p{
+    color: rgb(230, 230, 230);
+    font-size: 2vmin;
+    margin-bottom: 20px;
+}
+
+.explore h1{
+    font-size: 7vmin;
+    margin: 30px;
+}
+
+/* Tour Section Style */
+
+.image-wrapper img{
+    width: 200px;
+    height: 200px;
+}
+.image-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.col{
+    width: 50%;
+}
+
+.col h1{
+    font-size: 4vmin;
+    margin-bottom: 10px;
+}
+.col p{
+    font-size: 2vmin;
+    margin-bottom: 20px;
+}
+
+/* footer section */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #474f52;
+}
+
+footer p{
+    color: #9c9d97;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Mobile Device */
+@media only screen and (max-width: 850px) {
+    .menu-button{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #1f2531;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .explore{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .explore-content{
+        width: 100%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .image-wrapper img{
+        width: 200px;
+        height: 200px;
+    }
+    .col {
+        width: 100%;
+    }
+}
+
+

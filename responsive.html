@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Responsive</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li class="ctn"><a href="#">Contact</a></li>
+
+        </ul>
+        <img src="menu-btn.png" alt="" class="menu-button">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore the Beauty of Nature</h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+            </div>
+            <div class="image-wrapper">
+                <div class="image-content">
+                    <img src="mountain.jpg" alt="mountain climbing">
+                    <h4>Join us for an exhilarating mountain climbing</h4>
+                    <p>
+                        Join us for an exhilarating mountain climbing event this weekend! Experience breathtaking views, challenge your limits, and make unforgettable memories with fellow adventure enthusiasts. All skill levels are welcome—gear up for an adventure of a lifetime!</p>
+                        <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="image-content">
+                    <img src="hiking.jpg" alt="hiking">
+                    <h4>Discover the Great Outdoors: Join Our Hiking Event!</h4>
+                    <p>Enjoy the fresh air, meet like-minded outdoor enthusiasts, and create unforgettable memories. Dont miss out on this opportunity to reconnect with nature and challenge yourself in a supportive and fun environment. Lace up your hiking boots and join us for a day of adventure and camaraderie!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="explore-content">
+            <h1>Explore The World</h1>
+            <p>Dive into diverse cultures, marvel at breathtaking landscapes, and experience the thrill of discovering new places. Whether you're wandering through ancient ruins, savoring exotic cuisines, or forging connections with people from different backgrounds, every moment promises to broaden your horizons and enrich your soul. Pack your bags and set out on an adventure that will leave you with stories to tell and memories to cherish for a lifetime.</p>
+            <a class="ctn">Learn More</a>
+            </div>
+        </section>
+
+        <section class="tours">
+            <div class="row">
+                <div class="col">
+                    <h1>Upcoming Tours & Destination</h1>
+                    <p>Get ready for an exciting adventure with our Upcoming Tours & Destinations! Discover hidden gems and iconic landmarks as we take you to some of the most beautiful and fascinating places around the globe. From serene beaches and lush forests to vibrant cities and historic sites, each tour is designed to offer unique experiences and unforgettable memories.</p>
+                    <a class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <div class="image-wrapper">
+                        <img src="img1.jpg" alt="events">
+                        <img src="img2.jpg"alt="events">
+                        <img src="img3.jpg" alt="events">
+                        <img src="img4.jpg" alt="events">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@examp</p>
+        <p>Copyright 2020 Outdoor Adventure</p>
+    </footer>
+    <script>
+        const menubtn = document.querySelector('.menu-button')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
